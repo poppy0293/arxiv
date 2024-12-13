@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArXiv Trends Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+        h2 {
+            color: #333;
+        }
+        iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Interactive Report: ArXiv Trends Analysis</h1>
+    </header>
+
+    <section id="section1">
+        <h2>1. Analysis of Yearly Trends in ArXiv Main Categories</h2>
+        <iframe src="1_interactive_trend_arxiv_main_categories.html"></iframe>
+    </section>
+
+    <section id="section2">
+        <h2>2. Cross-Disciplinary Analysis of Subcategories</h2>
+        <iframe src="2_subcategory_count_by_main_category.html"></iframe>
+        <iframe src="3_cs_cross_heatmap.html"></iframe>
+        <iframe src="4_math_cross_heatmap.html"></iframe>
+        <iframe src="5_physics_cross_heatmap.html"></iframe>
+    </section>
+
+    <section id="section3">
+        <h2>3. High-Frequency Words in Titles by Category</h2>
+        <img src="combined_wordclouds.png" alt="Wordclouds by Category">
+    </section>
+
+    <section id="section4">
+        <h2>4. Temporal Patterns of Revisions</h2>
+        <iframe src="6_time_between_versions.html"></iframe>
+        <iframe src="7_time_between_versions_filtered.html"></iframe>
+    </section>
+
+    <section id="section5">
+        <h2>5. Trends in Revision Frequency</h2>
+        <iframe src="8_number_of_versions.html"></iframe>
+        <iframe src="9_number_of_versions_filtered.html"></iframe>
+    </section>
+
+    <section id="section6">
+        <h2>6. Revision Dynamics Across Categories</h2>
+        <iframe src="10_avg_versions_per_category.html"></iframe>
+    </section>
+
+    <section id="section7">
+      <h2>7. Author Relationship Visualization</h2>
+      <iframe src="author_node_index.html" style="height: 800px;"></iframe>
+  </section>
+
+  <section id="section8">
+    <h2>8. Paper Relationship Visualization</h2>
+    <iframe src="papers_node_index.html" style="height: 800px;"></iframe>
+</section>
+
+<section id="section9">
+    <h2>9. Comprehensive Visualization</h2>
+    <iframe src="both_node_index.html" style="height: 800px;"></iframe>
+</section>
+</body>
+</html>
